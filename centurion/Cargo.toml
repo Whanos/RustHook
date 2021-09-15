@@ -13,3 +13,26 @@ panic = "abort"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[dependencies.winapi]
+version = "0.3.9"
+features = [
+    "everything",
+    "impl-default",
+    "impl-debug",
+    "memoryapi",
+    "psapi",
+    "minwindef",
+    "winnt",
+    "winbase",
+    "minwinbase",
+    "consoleapi",
+    "wincon",
+    "libloaderapi",
+    "tlhelp32",
+    "handleapi",
+    "errhandlingapi",
+    "processthreadsapi",
+    "synchapi",
+    "ntdef"
+]
