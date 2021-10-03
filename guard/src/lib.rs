@@ -18,7 +18,6 @@ use std::sync::Mutex;
 // ls
 use lazy_static::lazy_static;
 
-// lazy static - means that won't be initialised till some code is ran to do so
 lazy_static! {
     static ref ORIGINAL: Mutex<Vec<usize>> = Mutex::new(Vec::new());
 }
